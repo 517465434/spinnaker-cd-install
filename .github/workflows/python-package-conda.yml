@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: Spinnaker Pre Install
+name: Spinnaker - devops
 env:
   SPINNAKER_VERSION: 1.24.6
   REGISTRY_URL: "gcr.io/spinnaker-marketplace/"
