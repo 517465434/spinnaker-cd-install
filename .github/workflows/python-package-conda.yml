@@ -47,12 +47,8 @@ jobs:
     - name: 02-1-获取gcr.io镜像
       run: |
         python3 tools/fileprocess.py ${SPINNAKER_VERSION}.yml  ${TAG_FILE} ${BOM_DIR} 
-        ls ${BOM_DIR}
-      
-        echo  -e "\033[32m  ---> Tag File ---> \033[0m"
-        cat ${TAG_FILE}
-    ## 收集镜像tag文件和下载镜像的脚本
-    - name: 03- 收集镜像tag文件和下载镜像的脚本
+       
+    - name: 02- 收集镜像tag文件和下载镜像的脚本
       run : |
         mkdir -p artifacts/${SPINNAKER_VERSION}
         mv ${TAG_FILE} artifacts/${SPINNAKER_VERSION}/
